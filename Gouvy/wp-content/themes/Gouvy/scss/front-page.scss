@@ -1,0 +1,243 @@
+.imgHeader {
+    height: 40rem;
+    background-position: 0% 70%;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -10;
+    img {
+        width: 100%;  /*width of parent container*/
+        height: 100%; /*height of parent container*/
+        object-fit: cover;
+        position: relative;
+        filter: brightness(60%);
+    }
+}
+    //Effet flèche img header svg
+    .custom-shape-divider-bottom-1615475501 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 81px;
+        }
+        .shape-fill {
+            fill: #FFFFFF;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+h2 {
+    color: #59D093;
+    font-weight: 700;
+    font-size: 2.3rem;  
+    font-family: 'Caveat';
+    margin-bottom: 1rem;
+}
+.section1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    .Section1Box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section1Gauche {
+        width: 33rem;
+        display: flex;
+        flex-direction: column;
+        p {
+            text-align: justify;
+            align-self: flex-start;
+            width: 100%;
+            margin-bottom: 1rem;
+            font-weight: 200;
+            font-style: italic;
+        }
+        ul li {
+            margin-left: 1rem;
+            font-weight: 200;
+            list-style-type: "\1F44D";
+            padding: 0 0 0 30px;
+            font-style: italic;
+        }
+    }
+    .section1Droite {
+        width: 33rem;
+        height: 28.5rem;
+        position: relative;
+        .section1__image1 {
+            position: absolute;
+            z-index: 2;
+            max-height: 12rem;
+            max-width: 23rem;
+            top: 5.5rem;
+            right: 9rem;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+        }
+        .section1__image2 {
+            position: absolute;
+            z-index: 1;
+            max-height: 23.5rem;
+            max-width: 18rem;
+            right: 0rem;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+.section2 {
+    width: 100%;
+    background-color: #1b755a;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 13rem 0rem 8rem 0rem;
+    //effet flèche fin de box 1
+    .custom-shape-divider-top-1615556839 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
+        .shape-fill {
+            fill: #FFFFFF;
+        }
+    }
+    .section2Box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        .section2Gauche {
+            width: 33rem;
+            height: 33rem;
+            background-color: crimson;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+        }
+        .section2Droite {
+            width: 33rem;
+            height: 33rem;
+            background-color: white;
+            padding: 2rem;
+            transition: all 0.4s ease-in-out;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+            h2 {
+                margin-bottom: 2rem;
+            }
+            p {
+                text-align: justify;
+                align-self: flex-start;
+                width: 100%;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                font-weight: 600;
+            }
+            ul li {
+                text-align: justify;
+                align-self: flex-start;
+                width: 100%;
+                margin-bottom: 0.2rem;
+                margin-left: 2rem;
+                font-weight: 200;
+                list-style-type: "\1F44D";
+                padding: 0 0 0 30px;
+                font-style: italic;
+            }
+        }
+    }
+    .section2__image {
+        height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease-in-out;
+    }
+
+}
+
+@media screen and (min-width: 1057px) {
+    .section2 .section2Box:hover .section2__image {
+        transform: scale(1.1) rotate(-3deg); 
+    }
+    .section2 .section2Box:hover .section2Gauche {
+        width: 26rem;
+    }
+    .section2 .section2Box:hover .section2Droite {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section1Droite {
+        margin-top: 4rem;
+    }
+    .section2Box {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 562px) {
+    .section1 .section1Gauche {
+        width: 90%;
+    }
+    .section1 .section1Droite {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .section1__image1 {
+        display: none;
+    }
+    .section1 .section1Droite .section1__image2 {
+        position: static;
+    }
+    .section2 .section2Box .section2Gauche {
+        width: 90%;
+    }
+    .section2 .section2Box .section2Droite {
+        width: 90%;
+    }
+    .section2 .section2Box .section2Droite ul li {
+        margin-left: 0;
+    }
+    
+}
