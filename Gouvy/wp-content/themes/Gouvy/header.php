@@ -15,9 +15,15 @@
         <nav class="navDark">
             <div class="navDarkDiv1">
                 <img class="navDarkImg" src="<?php echo wp_get_attachment_image_src(18, 'thumbnail')[0] ?>" alt="">
-                <p><?php the_field('navTitle', 'option'); ?></p>
+                <p><?php the_field('navtitle', 'option'); ?></p>
             </div>
-            <p>0456/02 11 09</p>
+                <p class="navDarkTel"><?php the_field('navnum', 'option'); ?></p>
+                <button id="btnMenuResp" class="btnMenuResp">
+                    <span id="span1" class="span"></span>
+                    <span id="span2" class="span"></span>
+                    <span id="span3" class="span"></span>
+                </button>
+
         </nav>
 
         <div class="search">
@@ -42,11 +48,6 @@
             ?>
         </div>
         
-        <button id="btnMenuResp" class="btnMenuResp">
-            <span id="span1" class="span"></span>
-            <span id="span2" class="span"></span>
-            <span id="span3" class="span"></span>
-        </button>
 
     </header>
 

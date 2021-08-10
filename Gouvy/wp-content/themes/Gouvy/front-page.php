@@ -14,7 +14,7 @@
 <h1><?php the_field('headertitlefrontpage'); ?></h1>
 
 
-<div class="section1">
+<section class="section1">
     <div class="Section1Box">
         <div class="section1Gauche">
             <h2><?php the_field('titlesection2'); ?></h2>
@@ -29,14 +29,15 @@
             <img class="section1__image2" src="<?php the_field('imagesection1b'); ?>" alt="">
         </div>  
     </div>
-</div>
+</section>
 
-    <div class="section2">
-        <div class="custom-shape-divider-top-1615556839">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-            </svg>
-        </div>
+<section class="section2">
+    
+    <div class="custom-shape-divider-top-1615556839">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+    </div>
 
     <div class="section2Box">
         <div class="section2Gauche">
@@ -53,8 +54,8 @@
                 <?php endwhile; ?>
             <?php endwhile; ?>
         </div>
-
     </div>
 
-    </div>
+</section>
+
 <?php get_footer(); ?>

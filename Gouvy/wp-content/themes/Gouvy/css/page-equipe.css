@@ -1,0 +1,83 @@
+.sectionEquipe {
+  padding: 2rem 0;
+}
+
+.sectionEquipe h2 {
+  margin: 0 auto 2rem 0;
+  text-align: center;
+}
+
+.equipeBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  min-width: 13rem;
+  max-width: 13rem;
+  min-height: 12rem;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.card:hover {
+  padding-top: 0;
+  padding-left: 0;
+}
+.card:hover .boxImgEquipe {
+  width: 8rem;
+  height: 8rem;
+}
+.card:hover h3 {
+  transform: translateY(-1rem);
+}
+.card h3 {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  color: black;
+  font-family: "Caveat";
+  font-size: 1.9rem;
+  margin-top: 1rem;
+}
+.card .boxImgEquipe {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.card .boxImgEquipe img {
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.equipeSection2, .equipeSection6 {
+  background-image: url(../img/pexels-ave-calvar-martinez-5038392.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.equipeSection2 h3, .equipeSection6 h3 {
+  color: white;
+}
+
+.equipeSection4 {
+  background-image: url(../img/pexels-ave-calvar-martinez-50383.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.equipeSection4 h3 {
+  color: white;
+}

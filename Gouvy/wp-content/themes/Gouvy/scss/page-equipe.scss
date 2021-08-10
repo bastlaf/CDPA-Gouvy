@@ -1,0 +1,88 @@
+.sectionEquipe {
+    padding: 2rem 0;
+}
+.sectionEquipe h2 {
+    margin: 0 auto 2rem 0;
+    text-align: center;
+}
+.equipeBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    position: relative;
+    min-width: 13rem;
+    max-width: 13rem;
+    min-height: 12rem;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 1rem;
+    // -webkit-box-shadow: 0px 0px 11px 0px rgba(117,117,117,1);
+    // -moz-box-shadow: 0px 0px 11px 0px rgba(117,117,117,1);
+    // box-shadow: 0px 0px 11px 0px rgba(117,117,117,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0 0 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    &:hover {
+        padding-top: 0;
+        padding-left: 0;
+    }
+    &:hover .boxImgEquipe {
+        width: 8rem;
+        height: 8rem;
+        //border-radius: 0;
+    }
+    &:hover h3 {
+        transform: translateY(-1rem);
+    }
+    h3 {
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+        color: black;
+        font-family: "Caveat";
+        font-size: 1.9rem;
+        margin-top: 1rem;
+    }
+    .boxImgEquipe {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        img {
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.equipeSection2, .equipeSection6 {
+    background-image: url(../img/pexels-ave-calvar-martinez-5038392.jpg);
+    background-position: bottom;
+    background-size: cover;
+    //background-attachment: fixed;
+    h3 {
+        color: white;
+    }
+}
+
+.equipeSection4 {
+    background-image: url(../img/pexels-ave-calvar-martinez-50383.jpg);
+    background-position: bottom;
+    background-size: cover;
+    //background-attachment: fixed;
+    h3 {
+        color: white;
+    }
+}
+

@@ -1,0 +1,89 @@
+.contactSection1 {
+  display: flex;
+  justify-content: center;
+}
+
+.boxContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contactGauche {
+  width: 33rem;
+  height: 30rem;
+  padding: 1rem 3rem;
+  background-image: url(../img/pexels-ave-calvar-martinez-3934623.jpg);
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
+.contactGauche h2 {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contactGauche p {
+  color: white;
+}
+.contactGauche .nomDuLieu {
+  margin-top: 1rem;
+}
+.contactGauche:hover {
+  transform: scale(1.05);
+}
+.contactGauche .adressePostale {
+  margin-bottom: 2rem;
+}
+
+.contactDroite {
+  width: 33rem;
+  height: 30rem;
+  padding: 1rem 3rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
+.contactDroite::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: url(../img/imageonline-co-invertedimage.png);
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.contactDroite h2 {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contactDroite .contactposte {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.contactDroite:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 562px) {
+  .contactDroite, .contactGauche {
+    width: 90%;
+  }
+}

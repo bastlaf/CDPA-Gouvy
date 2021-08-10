@@ -1,0 +1,304 @@
+.section1Tarifs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h2 {
+        margin: auto;
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
+.divPrincipale {
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    h2 {
+        margin-top: 5rem;
+    }
+}
+
+.custom-shape-divider-top-1616512084 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1616512084 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.custom-shape-divider-top-1616512084 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+.section4PDF {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    
+    .pdfTarifs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.550);
+        -webkit-box-shadow: 0px -46px 0px -28px rgba(0,0,0,0.85);
+        -moz-box-shadow: 0px -46px 0px -28px rgba(0,0,0,0.85);
+        box-shadow: 0px -46px 0px -28px rgba(0,0,0,0.85);
+        width: 15rem;
+        height: 15rem;
+        padding: 0.5rem;
+        margin: 1.5rem;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.03);
+        }
+        a img {
+            width: 4rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            transition: all 0.35s ease-in-out;
+            &:hover {
+                transform: rotate(370deg);
+            }
+        }
+        h4 {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        p {
+            font-weight: 400;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+        div {
+            font-weight: 400;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        ul {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+.sectionTable {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    h2 {
+        margin-top: 4rem;
+    }
+}
+
+
+.tarifBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardTarif {
+    margin: 3rem 1rem 3rem 1rem;
+    height: fit-content;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(117,117,117,1);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(117,117,117,1);
+    box-shadow: 0px 0px 11px 0px rgba(117,117,117,1);
+    border-radius: 0 4rem 0rem 0rem ;
+    // overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:hover img {
+        transform: translateY(-4rem) scale(1.3);
+    }
+    &:hover h3 {
+        transform: translateY(-2rem);
+    }
+    &:hover .cardTarifTop {
+        background-color: #319963;
+    }
+    .cardTarifTop {
+        height: 15rem;
+        width: 100%;
+        background-image: url(../img/pexels-ag-zn-4075452.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 0 4rem 0 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        img {
+            height: 6rem;
+            margin-top: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+        h3 {
+            color: white;
+            font-family: "Caveat";
+            font-size: 3rem;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .cardTarifContain {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .flexG1, .flexD1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            height: 3rem;
+            margin: 0;
+            border-top: 1px solid rgb(212, 212, 212);
+            background-color: rgb(236, 236, 236);
+            font-weight: 550;
+        }
+        .flexD {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            height: 3rem;
+            margin: 0;
+            border-top: 1px solid rgb(212, 212, 212);
+            background-color: rgb(255, 255, 255);
+        }
+        .flexG {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            height: 3rem;
+            margin: 0;
+            border-top: 1px solid rgb(212, 212, 212);
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
+.svg {
+    position:absolute;
+    z-index: -5;
+    opacity: 0.5;
+}
+.svg1 {
+    width: 30rem;
+    top:10rem;
+    left:-15rem;
+}
+.svg2 {
+    width: 35rem;
+    top:30rem;
+    right:-10rem;
+
+}
+.svg3 {
+    width: 35rem;
+    top:30rem;
+    right:-10rem;
+    transform: rotate(-17deg);
+}
+.svg4 {
+    width: 35rem;
+    top:55em;
+    left: -5rem;
+    transform: rotate(0deg);
+}
+.svg5 {
+    width: 34rem;
+    top:55rem;
+    left: -5rem;
+    transform: rotate(17deg);
+}
+.svg6 {
+    width: 35rem;
+    bottom:-3rem;
+    right: -5rem;
+    transform: rotate(0deg);
+}
+.svg7 {
+    width: 34rem;
+    bottom:-3rem;
+    right: -5rem;
+    transform: rotate(17deg);
+}
+
+@media screen and (min-width: 1725px) {
+    .svg4 {
+        top:45rem;    
+    }
+    .svg5 {
+        top:45rem;
+    }
+    
+    .svg6 {
+        display: none;
+    }
+    .svg7 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .svg2 {
+        top:50rem;    
+    }
+    .svg3 {
+        top:50rem;
+    }
+    .svg4 {
+        top:100rem;    
+    }
+    .svg5 {
+        top:100rem;
+    }
+    .svg6 {
+        bottom:10rem;    
+    }
+    .svg7 {
+        bottom:10rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .cardTarif {
+        width: 90%;
+    }
+}

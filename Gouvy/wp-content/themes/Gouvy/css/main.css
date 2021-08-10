@@ -1,3 +1,8 @@
 @import "./header.css";
 @import "./front-page.css";
 @import "./footer.css";
+@import "./page-description.css";
+@import "./page-tarifs.css";
+@import "./page-equipe.css";
+@import "./page-contact.css";
+@import "./page-photos.css";

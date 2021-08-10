@@ -1,0 +1,26 @@
+/* Fond */
+body {
+  background-image: url(../img/pexels-sohail-na-807598.jpg);
+  background-position: center;
+  background-size: cover;
+}
+  
+  /* Logo */
+  #login h1 a, .login h1 a {
+    background-image: url(../img/image-removebg-preview.png);
+    transform: scale(1.6);
+  }
+  
+  /* Bouton */
+  
+  .wp-core-ui .button-primary {
+    background: #83BD71;
+    border-color: #83BD71;
+  }
+  
+  /* Liens */
+  .login #backtoblog a, 
+  .login #nav a,
+  .privacy-policy-page-link a {
+    color: #BBBFCE;
+  }

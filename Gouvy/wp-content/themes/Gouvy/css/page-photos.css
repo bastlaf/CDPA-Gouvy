@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.section1Photos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 35rem;
+  height: max-content;
+  overflow: hidden;
+}
+
+.boxPhoto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  width: 100vw;
+}
+.boxPhoto h2 {
+  margin-left: 2rem;
+  margin-top: 3rem;
+  border-bottom: 2px solid #73d666;
+  width: fit-content;
+}
+.boxPhoto .swiper-containerPhoto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+.boxPhoto .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 13rem;
+}
+.boxPhoto .swiper-slide img {
+  object-fit: cover;
+  height: 13rem;
+  width: 20rem;
+}
+.boxPhoto .swiper-pagination-bullet {
+  min-width: 7px;
+  min-height: 7px;
+}
+.boxPhoto .swiper-pagination-bullet-active {
+  min-width: 10px;
+  min-height: 10px;
+  --swiper-theme-color: #9b8c42;
+  transition: all 0.2s ease-in-out;
+}
+
+.ImgSlideModal {
+  width: 100vw;
+  height: 100vh;
+  object-fit: unset;
+}
+
+.sectionParSlide {
+  position: relative;
+  padding-top: 3rem;
+}
+
+.pagination-slider {
+  width: 100%;
+  position: relative;
+  bottom: 10rem !important;
+  display: flex;
+  align-items: center;
+}
+
+.sectionParSlide:nth-child(even) {
+  background-image: url(../img/pexels-nguyễn-thanh-ngọc-3995673.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #309942;
+  background-blend-mode: screen;
+}
+
+.custom-shape-divider-bottom-1616938515 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1616938515 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 106px;
+}
+
+.custom-shape-divider-bottom-1616938515 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1616939147 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1616939147 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 103px;
+}
+
+.custom-shape-divider-top-1616939147 .shape-fill {
+  fill: #FFFFFF;
+}
+
+@media screen and (max-width: 650px) {
+  .custom-shape-divider-top-1616939147 svg {
+    height: 50px;
+  }
+
+  .custom-shape-divider-bottom-1616938515 svg {
+    height: 50px;
+  }
+}

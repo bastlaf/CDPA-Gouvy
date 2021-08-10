@@ -39,7 +39,7 @@
 }
 
 h2 {
-  color: #59D093;
+  color: #9b8c42;
   font-weight: 700;
   font-size: 2.3rem;
   font-family: "Caveat";
@@ -69,14 +69,12 @@ h2 {
   width: 100%;
   margin-bottom: 1rem;
   font-weight: 200;
-  font-style: italic;
 }
 .section1 .section1Gauche ul li {
   margin-left: 1rem;
   font-weight: 200;
   list-style-type: "👍";
   padding: 0 0 0 30px;
-  font-style: italic;
 }
 .section1 .section1Droite {
   width: 33rem;
@@ -107,7 +105,10 @@ h2 {
 
 .section2 {
   width: 100%;
-  background-color: #1b755a;
+  background-image: url(../img/pexels-cátia-matos-1072179.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   justify-content: center;

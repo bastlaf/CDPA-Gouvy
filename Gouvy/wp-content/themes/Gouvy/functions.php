@@ -14,6 +14,15 @@ function gouvy_register_assets() {
 
 
      // Déclarer jQuery
+     wp_deregister_script( 'jquery' ); // On annule l'inscription du jQuery de WP
+     wp_enqueue_script( // On déclare une version plus moderne
+         'jquery', 
+         'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', 
+         false, 
+         '3.3.1', 
+         true 
+     );
+     
      //wp_enqueue_script('jquery' );
     
      // déclarer swiper JS
@@ -31,6 +40,7 @@ function gouvy_register_assets() {
         array(), 
         '1.0'
     );
+    
 
      // Déclarer le JS
      wp_enqueue_script( 
@@ -81,10 +91,10 @@ add_action( 'wp_enqueue_scripts', 'gouvy_register_assets' );
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
-		'page_title' 	=> 'header',
-		'menu_title'	=> 'header',
+		'page_title' 	=> 'Nav Dark',
+		'menu_title'	=> 'Nav Dark',
 		'menu_slug' 	=> 'header-settings',
-        'position' => 4,
+        'position' => 1,
         'icon_url' => 'dashicons-format-image',
 		'redirect'		=> false
 	));
@@ -108,3 +118,33 @@ add_filter( 'use_block_editor_for_post', '__return_false' );
 
 add_filter('show_admin_bar', '__return_false');
  
+
+
+add_action('admin_menu', 'remove_links_tab_menu_pages');
+
+function remove_links_tab_menu_pages()
+{
+    remove_menu_page('upload.php');
+    remove_menu_page('edit-comments.php');
+    remove_menu_page('themes.php');
+    remove_menu_page('tools.php');
+    remove_menu_page('options-general.php');
+    remove_menu_page('edit.php');
+    remove_menu_page('plugins.php');
+    remove_menu_page('index.php');
+    
+}
+
+add_filter('acf/settings/show_admin', '__return_false');
+
+
+
+ 
+function capitaine_login_logo() {
+	wp_enqueue_style( 
+        'custom-login', 
+        get_template_directory_uri() . '/css/custom-login.css', 
+        array( 'login' ) 
+    );
+}
+add_action( 'login_enqueue_scripts', 'capitaine_login_logo' );
