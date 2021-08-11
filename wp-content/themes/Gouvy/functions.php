@@ -120,7 +120,7 @@ add_filter('show_admin_bar', '__return_false');
  
 
 
-add_action('admin_menu', 'remove_links_tab_menu_pages');
+//add_action('admin_menu', 'remove_links_tab_menu_pages');
 
 function remove_links_tab_menu_pages()
 {
@@ -135,7 +135,7 @@ function remove_links_tab_menu_pages()
     
 }
 
-add_filter('acf/settings/show_admin', '__return_false');
+// add_filter('acf/settings/show_admin', '__return_false');
 
 
 
